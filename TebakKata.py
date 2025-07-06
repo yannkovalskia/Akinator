@@ -1,8 +1,8 @@
 import random
-kata_kunci=["python", "java", "javascript", "c++", "ruby", "html", "css", "php", "swift", "kotlin"]
+kata_kunci=["python", "java", "javascript", "c++", "ruby", "html", "css", "php", "swift", "kotlin"] #keywords
 def tebak_kata():
-    jawaban=random.choice(kata_kunci)
-    kesempatan=6
+    jawaban=random.choice(kata_kunci) #answer
+    kesempatan=6 #chance
     for i in range(kesempatan):
         tebakan=input(f"Tebak hayo (Kamu punya: {kesempatan-i} kesempatan loh): ")
         if tebakan.lower()==jawaban:
